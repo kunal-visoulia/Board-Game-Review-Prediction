@@ -7,7 +7,7 @@ When I analyzed the dataset, for correaltions between various attributes using c
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/1.png)
 
-I found out that on the given dataset the **Linear Regression Model** had a ***Mean Sqaured Error*** of over 2 while,
+I found out that on the given dataset the **Linear Regression Model(Multivariate)** had a ***Mean Sqaured Error*** of over 2 while,
 
 **Random Forest Regressor Model** had a ***Mean Sqaured Error*** of around 1.4.
 
@@ -23,6 +23,31 @@ URL: https://github.com/ThaWeatherman/scrapers/tree/master/boardgamegeek/games.c
 I was able to remove those games that were never rated because they were never published.
 While training the either model, I removed attributes like name, id, bayes_average_rating and average_rating(because that's what we wanted to predict) as they were not providing any useful information. 
 
-## Linear Regression
+## [Linear Regression](https://towardsdatascience.com/introduction-to-machine-learning-algorithms-linear-regression-14c4e325882a)
+When the target variable that we’re trying to predict is **continuous**(Real valued like predict selling price of a house), we call the learning problem a regression problem.
 
+The other most common type of supervised learning problem is called the **classification problem** where we predict **discrete-valued outputs** (Example, if a tumor is malignant(1) or benign(0). So that's a zero-one valued discrete output.). 
 
+Linear regression is a **Supervised Learning Algorithm**(we're given the "right answer" for each of our training examples) used for finding linear relationship between _target_(predicted house price, denoted by **y**) and one or more _predictors_(attributes from the training data set, like size of house in feets, no. of bedrooms, etc denoted by **Vector 'x'**).
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/2.png)
+**'h'** represents the **Hypothesis Function**
+
+There are two types of linear regression- Simple and Multiple.
+
+### Simple Linear Regression or Linear Regression with One Variable
+Simple linear regression is a type of regression analysis where the number of independent variables is one and there is a linear relationship between the independent(x _horizontal axis_) and dependent(y _vertical axis_) variable. The red line in the above graph is referred to as the best fit straight line. Based on the given data points, we try to plot a line that models the points the best. 
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/3.png)
+
+The line can be modelled based on the linear equation shown below.
+>y(predicted) = h(x) = B_0 + B_1*x 
+where B_0 and B_1 are our parameters for the hypothesis function. 
+
+#### Cost Function
+We minimize the cost function to find the best values for our hypothesis function parameters.
+What we do is we minimize the error between the predicted value and the actual value.
+
+>![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/4.png)
+>The **Mean Squared Error **
+We choose the above function to minimize.
