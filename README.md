@@ -30,7 +30,9 @@ The other most common type of supervised learning problem is called the **classi
 
 Linear regression is a **Supervised Learning Algorithm**(we're given the "right answer" for each of our training examples) used for finding linear relationship between _target_(predicted house price, denoted by **y**) and one or more _predictors_(attributes from the training data set, like size of house in feets, no. of bedrooms, etc denoted by **'x'**).
 
+
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/2.png)
+
 
 **'h'** represents the **Hypothesis Function**
 
@@ -51,7 +53,7 @@ What we actually do is we minimize the error between the predicted value and the
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/5.png)
 
-The **Mean Squared Error(MSE) Function** **'n'** represents the total number of training examples in the dataset. 
+The **Mean Squared Error(MSE) Function**. **'m'** represents the size of training dataset. 
 
 Now, using this MSE function we are going to change the values of theta_0 and theta_1 such that the MSE value settles at the minima.
 
@@ -65,9 +67,9 @@ The idea is that we start with some values for theta_0 and theta_1 and then we c
 
 **_alpha_ represents the learning rate(decides on how fast the algorithm converges to the minima.)**
 
-![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/11.png)
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/4.png)
 
-To draw an analogy, imagine a pit in the shape of U and you are standing at the topmost point in the pit and your objective is to reach the bottom of the pit. **You can only take a discrete number of steps to reach the bottom**
+To draw an analogy how gradient descent works, imagine a pit in the shape of U and you are standing at the topmost point in the pit and your objective is to reach the bottom of the pit. **You can only take a discrete number of steps to reach the bottom**
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/6.png)
 
