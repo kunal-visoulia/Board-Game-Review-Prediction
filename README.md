@@ -44,8 +44,8 @@ Simple linear regression is a type of regression analysis where the number of in
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/3.png)
 
 The line can be modelled based on the linear equation shown below.
-![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/9.png)
 
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/9.png)
 
 #### Cost Function for Simple Linear Regression
 We minimize the cost function(J) to find the best values for our hypothesis function parameters.
@@ -77,4 +77,5 @@ Sometimes the cost function can be a non-convex function where you could settle 
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/10.png)
 
+### Multiple/Multivariate Linear Regression 
 
