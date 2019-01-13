@@ -28,9 +28,10 @@ When the target variable that we’re trying to predict is **continuous**(Real v
 
 The other most common type of supervised learning problem is called the **classification problem** where we predict **discrete-valued outputs** (Example, if a tumor is malignant(1) or benign(0). So that's a zero-one valued discrete output.). 
 
-Linear regression is a **Supervised Learning Algorithm**(we're given the "right answer" for each of our training examples) used for finding linear relationship between _target_(predicted house price, denoted by **y**) and one or more _predictors_(attributes from the training data set, like size of house in feets, no. of bedrooms, etc denoted by **Vector 'x'**).
+Linear regression is a **Supervised Learning Algorithm**(we're given the "right answer" for each of our training examples) used for finding linear relationship between _target_(predicted house price, denoted by **y**) and one or more _predictors_(attributes from the training data set, like size of house in feets, no. of bedrooms, etc denoted by **'x'**).
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/2.png)
+
 **'h'** represents the **Hypothesis Function**
 
 There are two types of linear regression- Simple and Multiple.
@@ -41,13 +42,37 @@ Simple linear regression is a type of regression analysis where the number of in
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/3.png)
 
 The line can be modelled based on the linear equation shown below.
->y(predicted) = h(x) = B_0 + B_1*x 
-where B_0 and B_1 are our parameters for the hypothesis function. 
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/9.png)
 
-#### Cost Function
-We minimize the cost function to find the best values for our hypothesis function parameters.
-What we do is we minimize the error between the predicted value and the actual value.
 
->![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/4.png)
->The **Mean Squared Error **
-We choose the above function to minimize.
+#### Cost Function for Simple Linear Regression
+We minimize the cost function(J) to find the best values for our hypothesis function parameters.
+What we actually do is we minimize the error between the predicted value and the actual value using MSE function.
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/5.png)
+
+The **Mean Squared Error(MSE) Function** **'n'** represents the total number of training examples in the dataset. 
+
+Now, using this MSE function we are going to change the values of theta_0 and theta_1 such that the MSE value settles at the minima.
+
+#### Gradient Descent for Simple Linear Regression
+For Parameter Learning ,i.e., updating theta_0 and theta_1 to reduce the cost function(MSE), we use **Gradient Descent**.
+
+The idea is that we start with some values for theta_0 and theta_1 and then we change these values iteratively to reduce the cost. Gradient descent helps us on how to change the values.
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/8.png)
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/7.png)
+
+**_alpha_ represents the learning rate(decides on how fast the algorithm converges to the minima.)**
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/11.png)
+
+To draw an analogy, imagine a pit in the shape of U and you are standing at the topmost point in the pit and your objective is to reach the bottom of the pit. **You can only take a discrete number of steps to reach the bottom**
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/6.png)
+
+Sometimes the cost function can be a non-convex function where you could settle at a local minima but for linear regression, it is always a convex function, and thus settle always at global minima.
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/10.png)
+
+
