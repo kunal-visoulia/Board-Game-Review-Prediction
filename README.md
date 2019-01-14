@@ -62,8 +62,8 @@ For Parameter Learning ,i.e., updating theta_0 and theta_1 to reduce the cost fu
 
 The idea is that we start with some values for theta_0 and theta_1 and then we change these values iteratively to reduce the cost. Gradient descent helps us on how to change the values.
 
-![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/8.png)
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/7.png)
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/8.png)
 
 **_alpha_ represents the learning rate(decides on how fast the algorithm converges to the minima.)**
 
