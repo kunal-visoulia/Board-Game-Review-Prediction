@@ -29,10 +29,13 @@ The mathematics and theory for Linear Regression is quite long, so here are the 
 - [Cost Function for Simple Linear Regression](#cost-function-for-simple-linear-regression)
 - [Gradient Descent for Simple Linear Regression](#gradient-descent-for-simple-linear-regression)
 
+
 - [Multivariate Linear Regression](#multivariate-linear-regression)
-- [Cost Function and Gradient Descent for MVLR](cost-function-and-gradient-descentfor-mvlr)
+- [Cost Function and Gradient Descent for MVLR](#cost-function-and-gradient-descentfor-mvlr)
 - [Gradient Descent in Practice](#gradient-descent-in-practice)
 - [Polynomial Regression](#polynomial-regression)
+
+
 #### [RANDOM FOREST REGRESSOR](#random-forest-regressor)
 
 ## [Linear Regression](https://towardsdatascience.com/introduction-to-machine-learning-algorithms-linear-regression-14c4e325882a)
