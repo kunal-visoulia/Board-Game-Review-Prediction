@@ -54,11 +54,11 @@ There are two types of linear regression- Simple and Multiple.
 ### Simple Linear Regression or Linear Regression with One Variable
 Simple linear regression is a type of regression analysis where the number of independent variables is one and there is a linear relationship between the independent(x _horizontal axis_) and dependent(y _vertical axis_) variable. The red line in the above graph is referred to as the best fit straight line. Based on the given data points, we try to plot a line that models the points the best. 
 
-![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/3.png)
+<img src="https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/3.png" width="440px"/>
 
 The line can be modelled based on the linear equation shown below.
 
-![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/9.png)
+<img src="https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/9.png" width="240px"/>
 
 #### [Cost Function for Simple Linear Regression](https://medium.com/@lachlanmiller_52885/machine-learning-week-1-cost-function-gradient-descent-and-univariate-linear-regression-8f5fe69815fd)
 We minimize the cost function(J) to find the best values for our hypothesis function parameters.
@@ -80,7 +80,7 @@ The idea is that we start with some values for theta_0 and theta_1 and then we c
 
 **_alpha_ represents the learning rate(decides on how fast the algorithm converges to the minima.)**
 
-![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/4.png)
+<img src="https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/4.png" width="440px"/>
 
 To draw an analogy how gradient descent works, imagine a pit in the shape of U and you are standing at the topmost point in the pit and your objective is to reach the bottom of the pit. **You can only take a discrete number of steps to reach the bottom**
 
@@ -100,7 +100,7 @@ Here, in case of Boardgame features, theta_0 can represent average_rating, theta
 
 To understand better, let's take an example from Andrew Ng's Machine Learning Course for predicting Housing Prices.
 
-![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/15.png)
+<img src="https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/15.png" width="500px"/>
 
 m = the number of training examples in the dataset
 
@@ -114,7 +114,7 @@ Using the definition of matrix multiplication, our multivariable hypothesis func
 
 The gradient descent equation itself is generally the same form; we just have to repeat it for our 'n' features:
 
-![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/16.png)
+<img src="https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/16.png" width="440px"/>
 
 The following image compares gradient descent with one variable to gradient descent with multiple variables:
 
