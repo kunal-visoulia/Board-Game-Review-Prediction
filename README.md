@@ -58,7 +58,7 @@ The **Mean Squared Error(MSE) Function**. **'m'** represents the size of trainin
 Now, using this MSE function we are going to change the values of theta_0 and theta_1 such that the MSE value settles at the minima.
 
 #### Gradient Descent for Simple Linear Regression
-For Parameter Learning ,i.e., updating theta_0 and theta_1 to reduce the cost function(MSE), we use **Gradient Descent**.
+For Parameter Learning ,i.e., updating theta_0 and theta_1 to reduce the cost function(MSE), we use **Gradient Descent(the other way is through [Normal Equation](https://www.ritchieng.com/multi-variable-linear-regression/)**.
 
 The idea is that we start with some values for theta_0 and theta_1 and then we change these values iteratively to reduce the cost. Gradient descent helps us on how to change the values.
 
