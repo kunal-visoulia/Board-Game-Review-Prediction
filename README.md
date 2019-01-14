@@ -107,6 +107,33 @@ The following image compares gradient descent with one variable to gradient desc
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/17.png)
 
+## Gradient Descent in Practice 
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/18.png)
+
+Two techniques to help with this are feature scaling and mean normalization
+### I - Feature Scaling (MVLR) and Mean Normalization
+***Feature scaling*** involves dividing the input values by the range (i.e. the maximum value minus the minimum value) of the input variable, resulting in a new range of just 1. 
+
+***Mean normalization*** involves subtracting the average value for an input variable from the values for that input variable resulting in a new average value for the input variable of just zero. To implement both of these techniques, adjust your input values as shown in this formula:
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/19.png)
+
+### II - The Learning Rate
+If α is too small: slow convergence.
+
+If α is too large: ￼may not decrease on every iteration and thus may not converge.
+
+### Polynomial Regression
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/20.png)
+
+
+
+
+
+
+
+
+
 
 
 
