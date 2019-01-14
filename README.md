@@ -93,11 +93,22 @@ m = the number of training examples in the dataset
 
 Using the definition of matrix multiplication, our multivariable hypothesis function can be concisely represented as:
 
-![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/13.png)
+<img src="https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/13.png" width="440px" />
 
 #### [Cost Function and Gradient Descent for MVLR](https://www.ritchieng.com/multi-variable-linear-regression/)
 
-<p img src="https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/14.png" width="200px">
+<img src="https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/14.png" width="440px" />
+
+The gradient descent equation itself is generally the same form; we just have to repeat it for our 'n' features:
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/16.png)
+
+The following image compares gradient descent with one variable to gradient descent with multiple variables:
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/17.png)
+
+
+
 
 
 
