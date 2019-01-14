@@ -35,8 +35,8 @@ The mathematics and theory for Linear Regression is quite long, so here are the 
 - [Normal Equation for Learning Parameters](#normal-equation-for-learning-parameters)
 
 ### 2. [RANDOM FOREST REGRESSION](#random-forest-regression)
-- Decision Tree Regression(#decision-tree-regression)
-- Bootstrap method and Bootstrap Aggregation(#bootstrap-method-and-bootstrap-aggregation)
+- [Decision Tree Regression](#decision-tree-regression)
+- [Bootstrap method and Bootstrap Aggregation](#bootstrap-method-and-bootstrap-aggregation)
 
 ## [Linear Regression](https://towardsdatascience.com/introduction-to-machine-learning-algorithms-linear-regression-14c4e325882a)
 When the target variable that we’re trying to predict is **continuous**(Real valued like predict selling price of a house), we call the learning problem a regression problem.
