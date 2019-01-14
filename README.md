@@ -34,9 +34,9 @@ The mathematics and theory for Linear Regression is quite long, so here are the 
 - [Cost Function and Gradient Descent for MVLR](#cost-function-and-gradient-descent-for-mvlr)
 - [Gradient Descent in Practice](#gradient-descent-in-practice)
 - [Polynomial Regression](#polynomial-regression)
+- [Normal Equation for Learning Parameters](#normal-equation-for-learning-parameters)
 
-
-#### [RANDOM FOREST REGRESSOR](#random-forest-regressor)
+#### [RANDOM FOREST REGRESSION](#random-forest-regression)
 
 ## [Linear Regression](https://towardsdatascience.com/introduction-to-machine-learning-algorithms-linear-regression-14c4e325882a)
 When the target variable that we’re trying to predict is **continuous**(Real valued like predict selling price of a house), we call the learning problem a regression problem.
@@ -141,8 +141,20 @@ If α is too large: ￼may not decrease on every iteration and thus may not conv
 ### Polynomial Regression
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/20.png)
 
+### Normal Equation for Learning Parameters
+The normal equation formula is given below:
 
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/21.png)
 
+The following is a comparison of gradient descent and the normal equation:
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/22.png)
+
+**Normal Equation Noninvertibility**
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/23.png)
+
+## Random Forrest Regression
 
 
 
