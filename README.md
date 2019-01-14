@@ -35,6 +35,8 @@ The mathematics and theory for Linear Regression is quite long, so here are the 
 - [Normal Equation for Learning Parameters](#normal-equation-for-learning-parameters)
 
 ### 2. [RANDOM FOREST REGRESSION](#random-forest-regression)
+- Decision Tree Regression[#decision-tree-regression]
+- Bootstrap method and Bootstrap Aggregation(#bootstrap-method-and-bootstrap-aggregation)
 
 ## [Linear Regression](https://towardsdatascience.com/introduction-to-machine-learning-algorithms-linear-regression-14c4e325882a)
 When the target variable that we’re trying to predict is **continuous**(Real valued like predict selling price of a house), we call the learning problem a regression problem.
@@ -66,7 +68,8 @@ What we actually do is we minimize the error between the predicted value and the
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/5.png)
 
-The **Mean Squared Error(MSE) Function**. **'m'** represents the size of training dataset. 
+The **Mean Squared Error(MSE) Function**. MSE can never be negative.
+**'m'** represents the size of training dataset. 
 
 Now, using this MSE function we are going to change the values of theta_0 and theta_1 such that the MSE value settles at the minima.
 
@@ -152,11 +155,86 @@ The following is a comparison of gradient descent and the normal equation:
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/23.png)
 
-## Random Forrest Regression
+## [Random Forrest Regression](https://towardsdatascience.com/the-random-forest-algorithm-d457d499ffcd)
+Random Forest is a **supervised learning algorithm**.Unlike linear models, random forests are able to capture non-linear interaction between the features and the target.
+The random forest model is a type of additive model that makes predictions by combining decisions from a sequence of base models. 
+
+More formally we can write this class of models as:
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/24.png)
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/25.png)
+
+Here, each base classifier is a *simple decision tree*.
+
+>It is a type of ensemble(of decision trees) machine learning algorithm called **[“bagging” (Bootsrap Aggregation)](https://machinelearningmastery.com/bagging-and-random-forest-ensemble-algorithms-for-machine-learning/)**.
+
+>**Random forest builds multiple decision trees and merges them together to get a more accurate and stable prediction.**
+
+In random forests, all the base models are constructed independently using a **different subsample** of the data.
 
 
 
 
+### [Decision Tree Regression](https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052)
+The **decision tree** is a simple machine learning model for getting started with regression tasks.
+
+It uses a tree-like model of decisions, **_BUT, How can an algorithm be represented as a tree?
+_**
+For this let’s consider a very basic example that uses titanic data set for predicting whether a passenger will survive or not. Below model uses 3 features/attributes/columns from the data set, namely sex, age and sibsp (number of spouses or children along).This methodology is more commonly known as **learning decision tree from data**. 
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/26.png)
+
+>each *internal* (non-leaf) node denotes a test on an attribute, each *branch* represents the outcome of a test, and each *leaf* (or terminal) node holds a class label. The topmost node in a tree is the root node. 
+Above tree is called **Classification tree** as the target is to classify passenger as survived or died. **Regression trees*** are represented in the same manner, just they predict continuous values like price of a house.
+
+*Although, a real dataset will have a lot more features and this will just be a branch in a much bigger tree, but you can’t ignore the simplicity of this algorithm.*
+
+>In general, Decision Tree algorithms are referred to as **CART** or Classification and Regression Trees.
+
+**Advantages of CART**
+
+- Simple to understand, interpret, visualize.
+- Decision trees implicitly perform variable screening or feature selection.
+- Can handle both numerical and categorical data(take one of a limited, and usually fixed, number of possible values.).
+- Nonlinear relationships between parameters do not affect tree performance.
+
+**Disadvantages of CART**
+
+- Decision-tree learners can create over-complex trees that do not generalize the data well and thus lead to**overfitting**.
+- Decision trees **can be unstable** because small variations in the data might result in a completely different tree being generated. This is called variance, which needs to be _lowered by methods like **bagging** and boosting_.
+- Decision tree learners create biased trees if some classes dominate. It is therefore _recommended to balance the data set prior_ to fitting with the decision tree.
+- They are greedy. They choose which variable to split on using a greedy algorithm that minimizes error.
+
+### [Bootstrap method and Bootstrap Aggregation](https://machinelearningmastery.com/bagging-and-random-forest-ensemble-algorithms-for-machine-learning/)
+The bootstrap is a powerful statistical method for estimating a quantity from a data sample. This is easiest to understand if the quantity is a descriptive statistic such as a mean or a standard deviation.
+
+Bootstrap Aggregation, is a simple and very powerful ensemble method which can be, Just like the decision trees themselves,  used for classification and regression problems.
+
+An ensemble method is a technique that combines the predictions from multiple machine learning algorithms together to make more accurate predictions than any individual model.
+
+Bootstrap Aggregation is used to reduce the variance for those algorithm that have high variance like classification and regression trees (CART).
+
+**But why do decision trees show such high variance?**
+>If the number of levels is too high i.e a complicated decision tree, the model tends to overfit.
+
+Intuitively, it can be understood in this way.
+
+>When there are too many decision nodes to go through before arriving at the result i.e number of nodes to traverse before reaching the leaf nodes is high, the conditions that you are checking against becomes multiplicative. That is, the computation becomes (condition 1)&&(condition 2)&&(condition 3)&&(condition 4)&&(condition5).
+Only if all the conditions are satisfied, a decision is reached. As you can see, this will work very well for the training set as you are continuously narrowing down on the data. The tree becomes highly tuned to the data present in the training set.
+But when a new data point is fed, even if one of the parameters deviates slightly, the condition will not be met and it will take the wrong branch.
+
+When bagging with decision trees, we are less concerned about individual trees overfitting the training data. For this reason and for efficiency, the individual decision trees are grown deep (e.g. few training samples at each leaf-node of the tree) and the trees are not pruned(size of tree is not reduced to overcome overfitting). These trees will have both high variance and low bias. These are **important characterize of sub-models when combining predictions using bagging**.
+
+The only parameters when bagging decision trees is the number of samples,i.e,**number of trees to include**. This can be chosen by increasing the number of trees on run after run until the accuracy begins to stop showing improvement. Very large numbers of models may take a long time to prepare, but will not overfit the training data.
+
+**How Bagging of the CART algorithm works:**
+Let’s assume we have a sample dataset of 1000 instances.
+
+1. Create many (e.g. 100) random sub-samples of our dataset with replacement.
+2. Train a CART model on each sample.
+3. Given a new dataset, calculate the average prediction from each model.
+
+For example, if we had 5 bagged decision trees that made the following class predictions for a in input sample: blue, blue, red, blue and red, we would take the most frequent class and predict blue.
 
 
 
