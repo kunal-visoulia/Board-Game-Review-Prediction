@@ -34,9 +34,11 @@ The mathematics and theory for Linear Regression is quite long, so here are the 
 - [Polynomial Regression](#polynomial-regression)
 - [Normal Equation for Learning Parameters](#normal-equation-for-learning-parameters)
 
-### 2. [RANDOM FOREST REGRESSION](#random-forest-regression)
+### 2. [RANDOM FORREST REGRESSION](#random-forrest-regression)
 - [Decision Tree Regression](#decision-tree-regression)
 - [Bootstrap method and Bootstrap Aggregation](#bootstrap-method-and-bootstrap-aggregation)
+- [From Bagging to Random Forest](#from-bagging-to-random-forest)
+
 
 ## [Linear Regression](https://towardsdatascience.com/introduction-to-machine-learning-algorithms-linear-regression-14c4e325882a)
 When the target variable that we’re trying to predict is **continuous**(Real valued like predict selling price of a house), we call the learning problem a regression problem.
@@ -170,11 +172,6 @@ Here, each base classifier is a *simple decision tree*.
 
 >**Random forest builds multiple decision trees and merges them together to get a more accurate and stable prediction.**
 
-In random forests, all the base models are constructed independently using a **different subsample** of the data.
-
-
-
-
 ### [Decision Tree Regression](https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052)
 The **decision tree** is a simple machine learning model for getting started with regression tasks.
 
@@ -235,6 +232,18 @@ Let’s assume we have a sample dataset of 1000 instances.
 3. Given a new dataset, calculate the average prediction from each model.
 
 For example, if we had 5 bagged decision trees that made the following class predictions for a in input sample: blue, blue, red, blue and red, we would take the most frequent class and predict blue.
+
+## [From Bagging to Random Forest](https://machinelearningmastery.com/bagging-and-random-forest-ensemble-algorithms-for-machine-learning/)
+Random Forests are an improvement over bagged decision trees.
+
+A problem with decision trees like CART is that they are greedy. They choose which variable to split on using a greedy algorithm that minimizes error. As such, even with Bagging, the decision trees can have a lot of structural similarities and in turn have high correlation in their predictions.
+
+Combining predictions from multiple models in ensembles works better if the predictions from the sub-models are uncorrelated or at best weakly correlated.
+
+To solve tree correlation we allow random forest to randomly choose only m predictors in performing the split. Now the bagged trees all have different randomly selected features to perform cuts on. Therefore, the feature space is split on different predictors, decorrelating all the trees.
+
+
+
 
 
 
