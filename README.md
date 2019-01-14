@@ -175,14 +175,13 @@ Here, each base classifier is a *simple decision tree*.
 ### [Decision Tree Regression](https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052)
 The **decision tree** is a simple machine learning model for getting started with regression tasks.
 
-It uses a tree-like model of decisions, **_BUT, How can an algorithm be represented as a tree?
-_**
+It uses a tree-like model of decisions, **_BUT, How can an algorithm be represented as a tree?_**
 For this let’s consider a very basic example that uses titanic data set for predicting whether a passenger will survive or not. Below model uses 3 features/attributes/columns from the data set, namely sex, age and sibsp (number of spouses or children along).This methodology is more commonly known as **learning decision tree from data**. 
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/26.png)
 
 >each *internal* (non-leaf) node denotes a test on an attribute, each *branch* represents the outcome of a test, and each *leaf* (or terminal) node holds a class label. The topmost node in a tree is the root node. 
-Above tree is called **Classification tree** as the target is to classify passenger as survived or died. **Regression trees*** are represented in the same manner, just they predict continuous values like price of a house.
+Above tree is called **Classification tree** as the target is to classify passenger as survived or died. **Regression trees** are represented in the same manner, just they predict continuous values like price of a house.
 
 *Although, a real dataset will have a lot more features and this will just be a branch in a much bigger tree, but you can’t ignore the simplicity of this algorithm.*
 
@@ -197,7 +196,7 @@ Above tree is called **Classification tree** as the target is to classify passen
 
 **Disadvantages of CART**
 
-- Decision-tree learners can create over-complex trees that do not generalize the data well and thus lead to**overfitting**.
+- Decision-tree learners can create over-complex trees that do not generalize the data well and thus lead to **overfitting**.
 - Decision trees **can be unstable** because small variations in the data might result in a completely different tree being generated. This is called variance, which needs to be _lowered by methods like **bagging** and boosting_.
 - Decision tree learners create biased trees if some classes dominate. It is therefore _recommended to balance the data set prior_ to fitting with the decision tree.
 - They are greedy. They choose which variable to split on using a greedy algorithm that minimizes error.
