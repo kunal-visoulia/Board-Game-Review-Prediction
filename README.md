@@ -25,6 +25,14 @@ While training the either model, I removed attributes like name, id, bayes_avera
 
 The mathematics and theory for Linear Regression is quite long, so here are the hyperlinks for the page:
 #### [LINEAR REGRESSION](#linear-regression) 
+- [Simple Linear Regression or Linear Regression with One Variable](#simple-linear-regression-or-linear-regression-with-one-variable)
+- [Cost Function for Simple Linear Regression](#cost-function-for-simple-linear-regression)
+- [Gradient Descent for Simple Linear Regression](#gradient-descent-for-simple-linear-regression)
+
+- [Multivariate Linear Regression](#multivariate-linear-regression)
+- [Cost Function and Gradient Descent for MVLR](cost-function-and-gradient-descentfor-mvlr)
+- [Gradient Descent in Practice](#gradient-descent-in-practice)
+- [Polynomial Regression](#polynomial-regression)
 #### [RANDOM FOREST REGRESSOR](#random-forest-regressor)
 
 ## [Linear Regression](https://towardsdatascience.com/introduction-to-machine-learning-algorithms-linear-regression-14c4e325882a)
@@ -81,7 +89,7 @@ Sometimes the cost function can be a non-convex function where you could settle 
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/10.png)
 
-### Multiple/Multivariate Linear Regression 
+### Multivariate Linear Regression 
 The multivariable form of the hypothesis function accommodating these multiple features is as follows:
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/12.png)
