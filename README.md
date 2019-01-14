@@ -24,19 +24,17 @@ I was able to remove those games that were never rated because they were never p
 While training the either model, I removed attributes like name, id, bayes_average_rating and average_rating(because that's what we wanted to predict) as they were not providing any useful information. 
 
 The mathematics and theory for Linear Regression is quite long, so here are the hyperlinks for the page:
-#### [LINEAR REGRESSION](#linear-regression) 
+### 1. [LINEAR REGRESSION](#linear-regression) 
 - [Simple Linear Regression or Linear Regression with One Variable](#simple-linear-regression-or-linear-regression-with-one-variable)
 - [Cost Function for Simple Linear Regression](#cost-function-for-simple-linear-regression)
 - [Gradient Descent for Simple Linear Regression](#gradient-descent-for-simple-linear-regression)
-
-
 - [Multivariate Linear Regression](#multivariate-linear-regression)
 - [Cost Function and Gradient Descent for MVLR](#cost-function-and-gradient-descent-for-mvlr)
 - [Gradient Descent in Practice](#gradient-descent-in-practice)
 - [Polynomial Regression](#polynomial-regression)
 - [Normal Equation for Learning Parameters](#normal-equation-for-learning-parameters)
 
-#### [RANDOM FOREST REGRESSION](#random-forest-regression)
+### 2. [RANDOM FOREST REGRESSION](#random-forest-regression)
 
 ## [Linear Regression](https://towardsdatascience.com/introduction-to-machine-learning-algorithms-linear-regression-14c4e325882a)
 When the target variable that we’re trying to predict is **continuous**(Real valued like predict selling price of a house), we call the learning problem a regression problem.
