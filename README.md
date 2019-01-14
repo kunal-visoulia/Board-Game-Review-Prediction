@@ -82,7 +82,8 @@ The multivariable form of the hypothesis function accommodating these multiple f
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/12.png)
 
-Here, in case of Boardgame features, theta_0 can represent average_rating, theta_1 can represent average_weight, theta_2 can represent playing_time, theta_3 can represent min_playing_time, and so on, while x1,x2,x3.... represent respective values for the features in the training dataset.**x0 is assumed to be 1 **
+Here, in case of Boardgame features, theta_0 can represent average_rating, theta_1 can represent average_weight, theta_2 can represent playing_time, theta_3 can represent min_playing_time, and so on, while x1,x2,x3.... represent respective values for the features in the training dataset.
+**x0 is not part of dataset and assumed to be 1**
 
 To understand better, let's take an example from Andrew Ng's Machine Learning Course for predicting Housing Prices.
 
@@ -96,7 +97,7 @@ Using the definition of matrix multiplication, our multivariable hypothesis func
 
 #### [Cost Function and Gradient Descent for MVLR](https://www.ritchieng.com/multi-variable-linear-regression/)
 
-![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/14.png)
+<p img src="https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/14.png" width="200px">
 
 
 
