@@ -28,7 +28,7 @@ When the target variable that we’re trying to predict is **continuous**(Real v
 
 The other most common type of supervised learning problem is called the **classification problem** where we predict **discrete-valued outputs** (Example, if a tumor is malignant(1) or benign(0). So that's a zero-one valued discrete output.). 
 
-Linear regression is a **Supervised Learning Algorithm**(we're given the "right answer" for each of our training examples) used for finding linear relationship between _target_(predicted house price, denoted by **y**) and one or more _predictors_(attributes from the training data set, like size of house in feets, no. of bedrooms, etc denoted by **'x'**).
+Linear regression is a **Supervised Learning Algorithm**(we're given the "right answer" for each of our training examples) used for finding linear relationship between _target_(predicted house price, denoted by **y**) and one or more _predictors_(attributes from the training data set, like size of house in feets, no. of bedrooms, etc denoted by **'x'** or by **Feature Vector X** ).
 
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/2.png)
@@ -47,7 +47,7 @@ The line can be modelled based on the linear equation shown below.
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/9.png)
 
-#### Cost Function for Simple Linear Regression
+#### [Cost Function for Simple Linear Regression](https://medium.com/@lachlanmiller_52885/machine-learning-week-1-cost-function-gradient-descent-and-univariate-linear-regression-8f5fe69815fd)
 We minimize the cost function(J) to find the best values for our hypothesis function parameters.
 What we actually do is we minimize the error between the predicted value and the actual value using MSE function.
 
@@ -78,4 +78,27 @@ Sometimes the cost function can be a non-convex function where you could settle 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/10.png)
 
 ### Multiple/Multivariate Linear Regression 
+The multivariable form of the hypothesis function accommodating these multiple features is as follows:
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/12.png)
+
+Here, in case of Boardgame features, theta_0 can represent average_rating, theta_1 can represent average_weight, theta_2 can represent playing_time, theta_3 can represent min_playing_time, and so on, while x1,x2,x3.... represent respective values for the features in the training dataset.**x0 is assumed to be 1 **
+
+To understand better, let's take an example from Andrew Ng's Machine Learning Course for predicting Housing Prices.
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/15.png)
+
+m = the number of training examples in the dataset
+
+Using the definition of matrix multiplication, our multivariable hypothesis function can be concisely represented as:
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/13.png)
+
+#### [Cost Function and Gradient Descent for MVLR](https://www.ritchieng.com/multi-variable-linear-regression/)
+
+![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/14.png)
+
+
+
+
 
