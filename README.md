@@ -31,7 +31,7 @@ The mathematics and theory for Linear Regression is quite long, so here are the 
 
 
 - [Multivariate Linear Regression](#multivariate-linear-regression)
-- [Cost Function and Gradient Descent for MVLR](#cost-function-and-gradient-descentfor-mvlr)
+- [Cost Function and Gradient Descent for MVLR](#cost-function-and-gradient-descent-for-mvlr)
 - [Gradient Descent in Practice](#gradient-descent-in-practice)
 - [Polynomial Regression](#polynomial-regression)
 
