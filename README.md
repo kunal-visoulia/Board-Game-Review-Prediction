@@ -141,7 +141,7 @@ If α is too small: slow convergence.
 
 If α is too large: ￼may not decrease on every iteration and thus may not converge.
 
-### Polynomial Regression
+### [Polynomial Regression](https://towardsdatascience.com/polynomial-regression-bbe8b9d97491)
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/20.png)
 
 ### Normal Equation for Learning Parameters
