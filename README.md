@@ -45,13 +45,18 @@ When the target variable that we’re trying to predict is **continuous**(Real v
 
 The other most common type of supervised learning problem is called the **classification problem** where we predict **discrete-valued outputs** (Example, if a tumor is malignant(1) or benign(0). So that's a zero-one valued discrete output.). 
 
-Linear regression is a **Supervised Learning Algorithm**(we're given the "right answer" for each of our training examples) used for finding linear relationship between _target_(predicted house price, denoted by **y**) and one or more _predictors_(attributes from the training data set, like size of house in feets, no. of bedrooms, etc denoted by **'x'** or by **Feature Vector X** ).
+[Linear regression](https://towardsdatascience.com/linear-regression-using-python-b136c91bf0a2) is a **Supervised Learning Algorithm**(we're given the "right answer" for each of our training examples) used for finding linear relationship between _target_(predicted house price, denoted by **y**) and one or more _predictors_(attributes from the training data set, like size of house in feets, no. of bedrooms, etc denoted by **'x'** or by **Feature Vector X** ).
 
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/2.png)
 
 
 **'h'** represents the **Hypothesis Function**
+##### Linear regression requires a linear model. No surprise, right? But what does that really mean?
+>A model is linear when each term is either a constant or the product of a parameter and a predictor variable. A linear
+equation is constructed by adding the results for each term. This constrains the equation to just one basic form:
+
+>**Response = constant + parameter * predictor + ... + parameter * predictor**
 
 There are two types of linear regression- Simple and Multiple.
 
@@ -142,7 +147,11 @@ If α is too small: slow convergence.
 If α is too large: ￼may not decrease on every iteration and thus may not converge.
 
 ### [Polynomial Regression](https://towardsdatascience.com/polynomial-regression-bbe8b9d97491)
+However, a lot of datasets do not exhibit linear relationships between the independent and the dependent variables. As a result, it is frequently necessary to create a polynomial model. However, these models are usually prone to overfitting. One method of reducing overfitting in polynomial models is through the use of regularization.
+
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/20.png)
+
+> For example, in case of hypothesis with degree=2, it is still considered to be linear model as the coefficients/weights associated with the features are still linear. x² is only a feature. However the curve that we are fitting is quadratic in nature.
 
 ### Normal Equation for Learning Parameters
 The normal equation formula is given below:
