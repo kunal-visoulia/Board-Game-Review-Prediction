@@ -1,5 +1,7 @@
 # Board-Game-Review-Prediction
 ## Using Linear Regression Model And A Random Forest Regressor Machine Learning Algorithms
+Reviews can make or break a product; as a result, many companies take drastic measures to ensure that their product receives good reviews. When it comes to board games, reviews and word-of-mouth are everything.
+
 In this project, I built a sytem that reviews/rates boardgames. 
 
 ## RESULT
