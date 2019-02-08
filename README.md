@@ -143,6 +143,8 @@ Two techniques to help with this are feature scaling and mean normalization
 
 ![](https://github.com/kunal-visoulia/Board-Game-Review-Prediction/blob/master/images/19.png)
 
+Both of these techniques have their drawbacks. If you have outliers in your data set, normalizing your data will certainly scale the “normal” data to a very small interval. And generally, most of data sets have outliers. When using standardization, your new data aren’t bounded (unlike normalization).
+
 ### II - The Learning Rate
 If α is too small: slow convergence.
 
